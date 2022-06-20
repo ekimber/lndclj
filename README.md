@@ -1,16 +1,11 @@
 # lndclj
 
-Clojure LND gRPC client. Uses the protojure library
-
-## Installation
+Clojure LND gRPC client.
+Protocol buffer support from the [protojure](https://protojure.readthedocs.io/en/latest/) library. 
 
 ## Usage
 
-FIXME: explanation
-
-Run the project directly:
-
-    $ ./gradlew runShadow
+Version numbers match the LND release versions (major/minor).
 
 Run the project's tests (there aren't any):
 
@@ -21,14 +16,9 @@ Run the project's tests (there aren't any):
 
 ## Examples
 
-...
-
-### Bugs
-
-...
 
 ## License
 
 Copyright © 2022 Edward Kimber
 
-Distributed under the GNU LESSER GENERAL PUBLIC LICENSE Version 3
+Distributed under LGPL 3.0
