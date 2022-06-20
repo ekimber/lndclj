@@ -1,0 +1,31 @@
+# Clojure
+.cpcache
+.nrepl-port
+
+# Gradle
+.gradle/
+build/
+gradle.properties
+
+# IntelliJ
+*.iml
+*.iws
+*.ipr
+.idea
+
+# Eclipse
+.settings/
+.project
+.classpath
+bin/
+
+# VS Code
+.vs-code/
+
+# Sublime
+*.sublime-workspace
+
+# Other
+*~
+
+generated/
