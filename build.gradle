@@ -1,7 +1,6 @@
 plugins {
   id 'dev.clojurephant.clojure' version '0.7.0-alpha.1'
   id 'application'
-  id 'com.github.johnrengelman.shadow' version '5.0.0'
   id 'maven-publish'
   id 'com.google.protobuf' version '0.8.18'
 }
@@ -77,9 +76,9 @@ protobuf {
 
 publishing {
   publications {
-    shadow(MavenPublication) { publication ->
-      project.shadow.component(publication)
-    }
+      main(MavenPublication) {
+          from components.java
+      }
   }
   repositories {
     maven {
