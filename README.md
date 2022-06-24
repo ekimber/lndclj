@@ -11,11 +11,18 @@ Run the project's tests (there aren't any):
 
     $ ./gradlew test
 
-## Options
-
-
 ## Examples
 
+    (require '[oberi.lndclj :refer [connect-lnd])
+    (require '[walletrpc.WalletKit.client :refer [ListUnspent]])
+    (require '[walletrpc :refer [new-ListUnspentRequest]])
+
+    (def connection {:uri      "https://localhost:10009"
+                     :cert     "<path to tls.cert>"
+                     :macaroon "<path to admin.macaroon>"})
+    
+    (def cli @(connect-lnd connection))
+    @(ListUnspent cli (new-ListUnspentRequest {:min-confs 3 :max-confs 99999}))
 
 ## License
 
