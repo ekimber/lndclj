@@ -7,6 +7,11 @@ Protocol buffer support from the [protojure](https://protojure.readthedocs.io/en
 
 Version numbers match the LND release versions (major/minor).
 
+Building the library requires `protoc-gen-clojure` to be installed in the `bin` directory. In the project root, run:
+
+    sudo curl -L https://github.com/protojure/protoc-plugin/releases/download/v2.0.0/protoc-gen-clojure --output ./bin/protoc-gen-clojure
+    sudo chmod +x ./bin/protoc-gen-clojure
+
 Run the project's tests (there aren't any):
 
     $ ./gradlew test
