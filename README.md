@@ -18,7 +18,7 @@ Run the project's tests (there aren't any):
 
 ## Examples
 
-    (require '[oberi.lndclj :refer [connect-lnd])
+    (require '[lndclj :refer [connect-lnd])
     (require '[walletrpc.WalletKit.client :refer [ListUnspent]])
     (require '[walletrpc :refer [new-ListUnspentRequest]])
 
